@@ -1,0 +1,553 @@
+.mt-15{
+	margin-top: 15px;
+}
+.mt-50 {
+    margin-top: 50px;
+}
+.text-center {
+	text-align: center;
+}
+.text-left {
+    text-align: left;
+}
+.style-h1 {
+	font-size: 7rem;
+	font-weight: 400;
+}
+.separador {
+	width: 250px;
+	border: 1px solid gray;
+	text-align: center;
+}
+.style-p {
+	font-size: 1.1em;
+    font-weight: 300;
+}
+header {
+	.navbar-fixed-top {
+		background-color: #27AD60;
+		padding: 20px 0;
+    }
+	.navbar-collapse {
+		border:none;
+	}
+	.navbar-default .navbar-nav li a {
+		font-weight: 300;
+        font-size: 15px;
+        color: white;
+
+        &:hover {
+        	color: white;
+        	background-color: gray;
+        	border-radius: 7px;
+        }
+	}
+}
+.banner {
+	background-image: url(../img/carousel-bg.jpg);
+	background-size: cover;
+	background-position-y: -65%;
+	height: 550px;
+	@extend .text-center;
+	color: white;
+	padding-top: 11%;
+
+
+	h1 {
+		@extend .style-h1;
+	}
+	h2 {
+		font-weight: 400;
+		margin-top: 30px;
+	}
+
+}
+@mixin color {
+	height: 150px;
+    margin-bottom: 10px;
+    color: gray;
+    font-size: 18px;
+    font-weight: 400;
+}
+.palette {
+
+	@extend .text-center;
+
+    hr {
+    	@extend .separador;
+    	margin-bottom: 70px;
+    }
+    h1 {
+    	@extend .style-h1;
+    	margin-top: 60px;
+    }
+    /* ROW-1-PALETA */
+    .box-color {
+    	@include color;
+    	background-color: #69D2E7;
+    }
+    .box-color-2{
+    	@include color;
+    	background-color: #A7DBDB;
+    }
+    .box-color-3{
+    	@include color;
+    	background-color: #E0E4CC;
+    }
+    .box-color-4{
+    	@include color;
+    	background-color: #F38639;
+    }
+    .box-color-5{
+    	@include color;
+    	background-color: #FA6900;
+    }
+    /* ROW-2-PALETA */
+    .box-color-6{
+    	@include color;
+    	background-color: #E94C6F;
+    }
+    .box-color-7{
+    	@include color;
+    	background-color: #542733;
+    }
+    .box-color-8{
+    	@include color;
+    	background-color: #5A6A62;
+    }
+    .box-color-9{
+    	@include color;
+    	background-color: #C6D5CD;
+    }
+    .box-color-10{
+    	@include color;
+    	background-color: #FDF200;
+    }
+    /* ROW-3-PALETA */
+    .box-color-11{
+    	@include color;
+    	background-color: #DB3340;
+    }
+    .box-color-12{
+    	@include color;
+    	background-color: #E8B71A;
+    }
+    .box-color-13{
+    	@include color;
+    	background-color: #F7EAC8;
+    }
+    .box-color-14{
+    	@include color;
+    	background-color: #1FDA9A;
+    }
+    .box-color-15{
+    	@include color;
+    	background-color: #28ABE3;
+    }
+    /* ROW-4-PALETA */
+    .box-color-16{
+    	@include color;
+    	background-color: #588C73;
+    }
+    .box-color-17{
+    	@include color;
+    	background-color: #F2E394;
+    }
+    .box-color-18{
+    	@include color;
+    	background-color: #F2AE72;
+    }
+    .box-color-19{
+    	@include color;
+    	background-color: #D96459;
+    }
+    .box-color-20{
+    	@include color;
+    	background-color: #8C4646;
+    }
+    /* ROW-5-PALETA */
+    .box-color-21{
+    	@include color;
+    	background-color: #D0C91F;
+    }
+    .box-color-22{
+    	@include color;
+    	background-color: #85C4B9;
+    }
+    .box-color-23{
+    	@include color;
+    	background-color: #008BBA;
+    }
+    .box-color-24{
+    	@include color;
+    	background-color: #DF514C;
+    }
+    .box-color-25{
+    	@include color;
+    	background-color: #DC403B;
+    }
+
+}
+@mixin style-section {
+    @extend .text-center;
+    padding: 100px 0;
+    color: white; 
+}
+.about-us {
+	@include style-section;
+    background-color: #2C3E50;
+	
+
+	h1 {
+		@extend .style-h1;
+	}
+	hr {
+		@extend .separador;
+		border-color: #DFE0E2;
+		margin-bottom: 70px;
+	}
+	p {
+		
+        text-align: left;
+        @extend .style-p
+	}
+	.about-text {
+
+        padding: 0 0 0 70px;
+    }
+    img {
+			width: 80%;
+	}
+    .bar{
+        margin-top: 60px;
+
+        .progress{
+            background-color: #DCD5D5;
+            padding: 3px;
+            height: 12px;
+            border-radius: 0px;
+            margin-bottom: 0px;
+            margin-top: 15px;
+        }
+        .progress-bar{
+            background-color: #E67E22;
+        }
+        h5{
+            color: white;
+            text-align: left;
+            font-weight: 400;
+            margin-top: 4px;
+        }
+    }
+
+}
+.tips-design {
+	@include style-section;
+    background-color: #27AD60;
+	 
+    h1 {
+		@extend .style-h1;
+	}
+	hr {
+		@extend .separador;
+		border-color: #DFE0E2;
+	}
+	p {
+		@extend .style-p;
+	}
+    .box-a {
+        padding: 40px 0;
+        margin:50px 30px; 
+        &:hover {
+            background-color: #2A7257;
+            padding: 40px 0;
+            margin-bottom: 0;
+
+            img {
+                transform : rotate(50deg);
+                background-color: #A96931;
+                background-image: none;
+            }
+            h2 {
+                color: #A96931;
+             }
+            hr {
+                display: block;
+                border-color: #BFD5CD;
+            }
+        }
+        hr {
+            display: none;
+        }
+        h2 {
+             font-weight: 400;
+    
+        }
+        img {
+            background-image: url(../img/icon-bg.png);
+            padding: 30px;
+            background-position-x: 50%;
+            background-color: #2C3E50;
+            transition: 2s;
+
+        }
+        p {
+            color: silver;
+        }
+    }
+    .btn-danger {
+        color: #ffffff;
+        background-color: #443E44;
+        border: none;
+        padding: 10px 20px;
+        font-size: 20px;
+        transition: 0.6s;
+        &:hover {
+            background-color: white;
+            color: black; 
+        }
+    }
+}
+.team {
+    @include style-section;
+	background-color: #27AD60;
+
+	h1 {
+		@extend .style-h1;
+		font-weight: 400;
+	}
+	hr {
+		@extend .separador;
+		border-color: #DFE0E2;
+	}
+	p {
+		@extend .style-p;
+	}
+	.team-img {
+
+		padding: 80px 35px 50px;
+
+		h2 {
+			color: white;
+		    font-weight: 300;
+		}
+
+		hr {
+			@extend .separador;
+			border: 1px dashed #93988B;
+		}
+		p {
+			color: silver;
+			&:first-child {
+                color: #3C594A;
+		    }
+		}
+        .fa {
+            color: silver;
+            font-size: 2rem;
+            margin: 25px 10px 0 0;
+        }
+	}
+}
+.best-price-guranteed {
+    @include style-section;
+    background-color: #2C3E50;
+
+    h1 {
+       @extend .style-h1; 
+    }
+    hr {
+            @extend .separador;
+    }
+    p {
+        @extend .style-p;
+        font-size: 16px;
+    } 
+    .bg-active {
+        background-color: #8F5F38;
+    }
+    .box-precios {
+        border: 1px solid green;
+        margin-top: 100px;
+        transition: 0.7s;
+
+        &:hover {
+            margin-top: 20px;
+            border:2px solid #E67E22;
+        }
+
+        h3 {
+            font-weight: 300;
+            margin: 0;
+            padding: 18px;
+        }
+        .box-dolar {
+            background-color: #27AD60;
+            padding: 10px;
+
+            span {
+                &:first-child {
+                   font-size: 55px;
+                   font-weight: 300; 
+                }
+                font-weight: 300;
+            }
+            p {
+                font-size: small;
+            }
+        }
+
+    }
+
+    .list-group {
+        
+        font-weight: 300;
+        font-size: medium;
+        margin-bottom: 0;
+        
+        p {
+            padding: 10px;
+            margin: 0;
+        }
+        .bg-p{
+            background-color: white;
+            color: gray;
+        }
+    }
+    .btn-default {
+        margin:20%;
+        color: white;
+        background-color: #3A353A;
+        border: none;
+        padding: 10px 20px;
+        font-size: 18px;
+        font-weight: 300;
+
+    }
+
+}
+.clients-say {
+    @include style-section;
+    background-color: #2C3E50;
+
+    h1 {
+       @extend .style-h1; 
+    }
+    hr {
+        @extend .separador;
+    }
+    p {
+        @extend .style-p;
+    }
+    .box-p {
+
+        padding: 2% 19%;
+        p {
+            font-size: 20px;
+            font-style: italic;
+            color: silver;
+        }
+        .autor {
+            font-size: 20px;
+            font-style: normal;
+            color: orange;
+        }
+    } 
+}
+.formulario {
+    @include style-section;
+    background-color: #2C3E50;
+
+    
+    h1 {
+       @extend .style-h1; 
+    }
+    hr {
+        @extend .separador;
+    }
+    p {
+        @extend .style-p;
+    }
+    .form-contact {
+        width: 63%;
+        margin: auto;
+        input{
+            margin-bottom: 15px;
+            font-size: 17px;
+            padding: 20px 10px;
+        }
+        textarea {
+            font-size: 17px;
+        }
+        button {
+            color: white;
+            background-color: #3A353A;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: 300;
+        }
+    }
+    
+}
+.redes {
+    background-image: url(../img/img-divider-img.jpg);
+    background-size: cover;
+    background-position-y: -30%;
+    padding: 250px 0 150px;
+    text-align: center;
+
+    .fa {
+        font-size: 130px;
+        color: white;
+        margin: 0 10px;
+    }
+}
+footer {
+    padding: 20px 0;
+    color: white;
+    background-color: #27AD60;
+
+    h3 {
+        text-align: center;
+    }
+    hr {
+        width: 80px;
+        border-color: white;
+    }
+    p {
+        @extend .style-p;
+    }
+    .box-footer {
+        padding: 0;
+        margin-bottom: 50px;
+
+        .btn-danger {
+           margin:0 -1px;
+           background-color: #443E44;
+           color: #E67E22;
+           border-color: #443E44;
+        }
+        .boton-suscribe .btn {
+            margin-top: 20px;
+            text-align: center;
+            color: white;
+            font-size: 17px;
+            font-weight: 300;
+        }
+    }
+    .copy {
+        color: #3D5349;
+        font-weight: 400;
+        font-size: 16px;
+    }
+    .back {
+        float: right;
+        font-weight: 300;
+        font-size: 16px;
+
+        a:hover {
+            color: black;
+        }
+    }
+}
