@@ -15,94 +15,65 @@ header .navbar-default .navbar-nav li a {
     background:none;
     font-family: 'Montserrat';
   }
-.hero-img  {
-  background-image: url('../img/background.png');
-  background-size: cover;
-  height: 700px;
+body  {
+  padding-top:40px;
+  font-family: 'Montserrat';
+  color: white;
 
 }
-header .navbar-fixed-top img{
-    width: 15%;
+h1{
+  font-family: 'Montserrat';
+}
+.opacity img {
+    width: 200px;
     border-radius: 100%;
-    float: left;
-
+    margin-top: 100px;
 }
-.hero-img .box-form {
-    margin-top: 30%;
-}
-.formulario {
-  padding: 100px 0;
-  color: white;
-  background-color: #2C3E50; }
-  .formulario .form-contact {
-    width: 63%;
-    margin: auto; }
-    .formulario .form-contact input {
-      margin-bottom: 15px;
-      font-size: 17px;
-      padding: 20px 10px; }
-    .formulario .form-contact textarea {
-      font-size: 17px; }
-    .formulario .form-contact button {
-      color: white;
-      background-color: #3A353A;
-      border: none;
-      padding: 10px 20px;
-      font-size: 18px;
-      font-weight: 300; }
-
-.redes {
-  background-image: url(../img/img-divider-img.jpg);
-  background-size: cover;
-  background-position-y: -30%;
-  padding: 250px 0 150px;
-  text-align: center; }
-  .redes .fa {
-    font-size: 130px;
+header .navbar-fixed-top .navbar-header a{
     color: white;
-    margin: 0 10px; }
-
-footer {
-  padding: 20px 0;
-  color: white;
-  background-color: #27AD60; }
-  footer h3 {
-    text-align: center; }
-  footer hr {
-    width: 80px;
-    border-color: white; }
-  footer .box-footer {
-    padding: 0;
-    margin-bottom: 50px; }
-    .btn-danger {
-      background-color: #443E44;
-      color: #E67E22;
-      border-color: #443E44;
-          margin: -1px; }
-    footer .box-footer .boton-suscribe .btn {
-      margin-top: 20px;
-      text-align: center;
-      color: white;
-      font-size: 17px;
-      font-weight: 300; }
-  footer .copy {
-    color: #3D5349;
-    font-weight: 400;
-    font-size: 16px; }
-  footer .back {
-    float: right;
-    font-weight: 300;
-    font-size: 16px; }
-    footer .back a:hover {
-      color: black; }
-
-@media (max-width: 768px) {
-    header .navbar-fixed-top img{ 
-    margin-top: -50px;
-    margin-left: 100px;
-    }
-    .hero-img .box-form {
-    margin-top: 70%;
-    }
+    font-size: 2em;
+    transition: 0.5s;
+    font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
 }
+.navbar-default .navbar-brand:hover{
+  background: none;
+}
+.hero-img{
+  background-size: cover;
+  background-image: url('../img/hero.jpg');
+  background-attachment: fixed;
 
+}
+.opacity {
+  background-color: rgba(0,0,0,0.5);
+  height: 100vh;
+}
+.opacity p {
+  margin: 20px 0 50px;
+}
+.boton a{
+  background-color: green;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px;
+  border: 1px solid green;
+  transition:0.7s;
+}
+.boton a:hover{
+  background-color: transparent;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px;
+  border: 1px solid white;
+}
+#screenshots {
+    margin-top: 100px;
+}
+.screen {
+  width: 240px;
+  height: 425px;
+}
